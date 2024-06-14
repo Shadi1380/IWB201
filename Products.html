@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadi</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/About.html">about</a></li>
+            <li><a href="/Products.html">Products</a></li>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>قائمة العقارات</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>العقار</th>
+                    <th>نوع العقار</th>
+                    <th>سعر الإيجار</th>
+                    <th>مدة الإيجار</th>
+                    <th>التفاصيل</th>
+                    <th>إختر العقار</th>
+                </tr>
+            </thead>
+            <tbody id="property-details">
+            </tbody>
+        </table>
+
+        <div id="formContainer">
+            <form id="userDataForm">
+                <div>
+                    <label for="username">أسم المستخدم:</label>
+                    <input type="text" id="username" name="username" placeholder="أدخل اسمك بالعربية" required>
+                </div>
+                <div>
+                    <label for="nationalId">الرقم الوطني:</label>
+                    <input type="text" id="nationalId" name="nationalId" placeholder="رقم الهوية" required minlength="11" maxlength="11">
+                </div>
+                <div>
+                    <label for="dob">تاريخ الميلاد:</label>
+                    <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy" pattern="\d{2}-\d{2}-\{4}" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">رقم الموبايل:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="09XXXXXXXX" pattern="09\d{8}" required>
+                </div>
+                <div>
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label for="captcha">رمز التحقق:</label>
+                    <input type="text" id="captcha" name="captcha" placeholder="أدخل رمز التحقق" required>
+                    <span id="captchaText"></span>
+                    <button type="button" onclick="generateCaptcha()">تغيير الرمز</button>
+                </div>
+                <button type="submit">إرسال</button>
+                <button type="button" onclick="cancelForm()">إلغاء</button>
+            </form>
+        </div>
+
+        <center>
+            <button class="BU">متابعة</button>
+        </center>
+    </div>
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Shadi<span> Rental Store</span></h3>
+
+            <p class="footer-links">
+                <a href="/About.html">about</a>
+                |
+                <a href="/Products.html">Products</a>
+                |
+                <a href="/index.html">Home</a>
+            </p>
+
+            <p class="footer-company-name"><b>Hosting link</b><strong> <a href="http://iwb201sh.wuaze.com/">Here</a></strong> </p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Shadi Rental Store</strong> Welcome to Shadi Rental Store
+                Are you looking for the perfect property to rent? We are here to help you!
+                At Shadi Real Estate Rental Store, we offer you a variety of properties that suit all your needs and tastes. Whether you're looking for a luxury apartment in the city or a quiet home in the suburbs, we have what you need.
+            </p>
+            <div class="footer-icons">
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="/main.js"></script>
+</body>
+</html>
